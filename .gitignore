@@ -1,0 +1,11 @@
+# Any generated documentation
+doc/*/*
+
+# Any backup files
+*~
+
+# Any shared library files
+*.so*
+
+# Any object files
+*.o
