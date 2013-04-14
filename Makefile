@@ -1,15 +1,21 @@
-.PHONY : src doc clean
+LIBNAME = libcollec
+CFLAGS = -fPIC -I./headers/ -Wall
+
+.PHONY : src pack doc clean
 
 src :
-	cd src; make
+	cd src; make all
+	mv src/*.o obj/
 
-pack :
-	cd src; make pack
-	mv src/*.so* ./
+pack : src
+	cd obj; make pack
+	mv obj/*.so* ./
 
 doc : ./doc/Doxyfile
 	doxygen ./doc/Doxyfile
 
 clean :
 	cd src; make clean
+	cd obj; make clean
+	-rm *.so*
 	find . -name "*~" -exec rm -f {} \;
