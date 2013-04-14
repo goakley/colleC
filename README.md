@@ -17,6 +17,10 @@ git repository)
 
 "A collection of items in which only the earliest added item may be accessed. Basic operations are add (to the tail) or enqueue and delete (from the head) or dequeue. Delete returns the item removed. Also known as "first-in, first-out" or FIFO."
 
-### [SortedList](http://xlinux.nist.gov/dads/HTML/sortedlist.html)
+### [Sorted List](http://xlinux.nist.gov/dads/HTML/sortedlist.html)
 
 "A list whose items are kept sorted."
+
+### [Bit Vector](http://xlinux.nist.gov/dads/HTML/bitVector.html)
+
+"An array of bits."

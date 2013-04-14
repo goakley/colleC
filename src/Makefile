@@ -1,12 +1,14 @@
-OBJECTS = stack.o queue.o sortedlist.o
+OBJECTS = bivector.o stack.o queue.o sortedlist.o
 HEADDIR = ../headers/
 LIBNAME = libcollec
-CFLAGS = -fPIC -I../headers
+CFLAGS = -fPIC -I../headers -Wall
 
 all : $(OBJECTS)
 
 pack : all
 	gcc -fPIC -shared -Wl,-soname,$(LIBNAME).so.0 -o $(LIBNAME).so.0.1 $(OBJECTS) -lc
+
+bivector.o : $(HEADDIR)bivector.h
 
 stack.o : $(HEADDIR)stack.h
 

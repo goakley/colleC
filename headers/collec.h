@@ -4,5 +4,6 @@
 #include <stack.h>
 #include <queue.h>
 #include <sortedlist.h>
+#include <bivector.h>
 
 #endif
