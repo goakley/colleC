@@ -17,5 +17,6 @@ doc : ./doc/Doxyfile
 clean :
 	cd src; make clean
 	cd obj; make clean
+	cd tests; make clean
 	-rm *.so*
 	find . -name "*~" -exec rm -f {} \;
