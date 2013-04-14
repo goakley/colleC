@@ -30,7 +30,6 @@ SortedList* sortedlist_malloc(size_t size,
     free(sortedlist);
     return NULL;
   }
-  size_t a = 8; size_t b = 12;
   return sortedlist;
 }
 void sortedlist_free(SortedList *sortedlist)
